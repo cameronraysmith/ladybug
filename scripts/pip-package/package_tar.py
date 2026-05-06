@@ -58,6 +58,7 @@ if __name__ == "__main__":
         shutil.copytree(
             os.path.abspath(os.path.join(base_dir, "..", "tools/python_api")),
             os.path.join(tempdir, "ladybug-source/tools/python_api"),
+            ignore=shutil.ignore_patterns("dataset"),
             dirs_exist_ok=True,
         )
 
